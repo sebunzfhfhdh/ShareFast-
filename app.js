@@ -8,6 +8,7 @@ const path = require('path');
 
 const app = express();
 const PORT = 3000;
+app.use(favicon(path.join(__dirname, 'public', 'logo.png')));
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
