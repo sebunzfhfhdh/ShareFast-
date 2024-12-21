@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .content {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a73e8;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Drag-and-Drop Zone */
+  .drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f0fe;
+    border: 2px dashed #1a73e8;
+    border-radius: 6px;
+    padding: 40px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .drop-zone.dragover {
+    background-color: #d2e3fc;
+    border-color: #174ea6;
+  }
+  
+  .drop-zone p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Input and Button Styles */
+  .file-input-label {
+    display: block;
+    cursor: pointer;
+    color: #1a73e8;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  button {
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #174ea6;
+  }
+  
+  /* Result Section */
+  #result {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #result.visible {
+    display: block;
+  }
+  
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  #fileUrl {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+  footer p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .file-display-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .file-display-container.hidden {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  /* Optional: Style the dropzone area */
+  #dropZone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #dropZone.dragover {
+    border-color: #007bff;
+    background-color: #e0f7ff;
+  }
+  
+  /* Style for the file name display */
+  .file-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+    font-weight: 500;
+  }
+  
